@@ -21,8 +21,8 @@ public class NotificationClient {
         String serverName = Tools.SERVER;
         int port = Tools.RECEIVER_PORT;
 
-        String httpCommand = "id" + "\n" + "messageHTTP" + "\n" + "15:36" + "\n" + NotificationType.HTTP + "\n" + "url=http://vlsv.ru/";
-        String emailCommand = "id2" + "\n" + "messageMail" + "\n" + "22:39" + "\n" + NotificationType.MAIL + "\n" + "email=lebedev.anatoly@mail.ru";
+        String httpCommand = "id" + "\n" + "messageHTTP" + "\n" + "15:36" + "\n" + NotificationType.HTTP + "\n" + "url=http://yandex.ru/";
+        String emailCommand = "id2" + "\n" + "messageMail" + "\n" + "22:39" + "\n" + NotificationType.MAIL + "\n" + "email=a@a.ru";
 
         try {
             System.out.println("Подключение к " + serverName + " на порт " + port);
