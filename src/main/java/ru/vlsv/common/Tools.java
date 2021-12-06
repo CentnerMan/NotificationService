@@ -1,6 +1,8 @@
 package ru.vlsv.common;
 
 import java.io.File;
+import java.util.Properties;
+import java.util.prefs.Preferences;
 
 /**
  * NotificationService.
@@ -14,8 +16,12 @@ public class Tools {
     public static final String SERVER = "localhost";
     public static final int RECEIVER_PORT = 6066;
     public static final int SENDER_PORT = 6077;
-    public static final String EMAIL_LOGIN = "anatoly.lebedeff@gmail.com";
-    public static final String EMAIL_PASSWORD = "cxdovtxupwddvkho";
+    public static final String EMAIL_LOGIN = "mymail@gmail.com";
+    public static final String EMAIL_PASSWORD = "password";
+
+    Preferences preferences = Preferences.userRoot();
+
+    Properties properties = System.getProperties();
 
     public static boolean createDirIfNotExist(String currentPath) {
         boolean result = false;
